@@ -13,6 +13,10 @@
 		E90298E31E12759D00C281AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E90298E21E12759D00C281AC /* Assets.xcassets */; };
 		E90298E61E12759D00C281AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E90298E41E12759D00C281AC /* LaunchScreen.storyboard */; };
 		E90298F21E12892200C281AC /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90298F11E12892200C281AC /* RatingView.swift */; };
+		E90298F51E14C08000C281AC /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90298F41E14C08000C281AC /* Int+Extension.swift */; };
+		E90298F91E14C49B00C281AC /* RatingViewDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90298F81E14C49B00C281AC /* RatingViewDemoViewController.swift */; };
+		E951D12C1E14E6700059A378 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E951D12B1E14E6700059A378 /* BaseViewController.swift */; };
+		E951D1301E14E9A50059A378 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = E951D12F1E14E9A50059A378 /* Common.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		E90298E51E12759D00C281AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E90298E71E12759D00C281AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E90298F11E12892200C281AC /* RatingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		E90298F41E14C08000C281AC /* Int+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Int+Extension.swift"; path = "Extension/Int+Extension.swift"; sourceTree = "<group>"; };
+		E90298F81E14C49B00C281AC /* RatingViewDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RatingViewDemoViewController.swift; path = DemoViewController/RatingViewDemoViewController.swift; sourceTree = "<group>"; };
+		E951D12B1E14E6700059A378 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = Support/BaseViewController.swift; sourceTree = "<group>"; };
+		E951D12F1E14E9A50059A378 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Common.swift; path = Support/Common.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,9 @@
 		E90298DA1E12759D00C281AC /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				E951D12E1E14E7290059A378 /* ProjectFile */,
+				E90298F71E14C45800C281AC /* DemoViewControllers */,
+				E90298F31E14C04400C281AC /* Extension */,
 				E90298EF1E1276D500C281AC /* Component */,
 				E90298ED1E1275D900C281AC /* Support */,
 			);
@@ -65,12 +76,8 @@
 		E90298ED1E1275D900C281AC /* Support */ = {
 			isa = PBXGroup;
 			children = (
-				E90298DB1E12759D00C281AC /* AppDelegate.swift */,
-				E90298DD1E12759D00C281AC /* ViewController.swift */,
-				E90298DF1E12759D00C281AC /* Main.storyboard */,
-				E90298E21E12759D00C281AC /* Assets.xcassets */,
-				E90298E41E12759D00C281AC /* LaunchScreen.storyboard */,
-				E90298E71E12759D00C281AC /* Info.plist */,
+				E951D12F1E14E9A50059A378 /* Common.swift */,
+				E951D12B1E14E6700059A378 /* BaseViewController.swift */,
 			);
 			name = Support;
 			sourceTree = "<group>";
@@ -89,6 +96,35 @@
 				E90298F11E12892200C281AC /* RatingView.swift */,
 			);
 			path = RatingView;
+			sourceTree = "<group>";
+		};
+		E90298F31E14C04400C281AC /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E90298F41E14C08000C281AC /* Int+Extension.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		E90298F71E14C45800C281AC /* DemoViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E90298F81E14C49B00C281AC /* RatingViewDemoViewController.swift */,
+			);
+			name = DemoViewControllers;
+			sourceTree = "<group>";
+		};
+		E951D12E1E14E7290059A378 /* ProjectFile */ = {
+			isa = PBXGroup;
+			children = (
+				E90298DB1E12759D00C281AC /* AppDelegate.swift */,
+				E90298E21E12759D00C281AC /* Assets.xcassets */,
+				E90298E71E12759D00C281AC /* Info.plist */,
+				E90298DF1E12759D00C281AC /* Main.storyboard */,
+				E90298E41E12759D00C281AC /* LaunchScreen.storyboard */,
+				E90298DD1E12759D00C281AC /* ViewController.swift */,
+			);
+			name = ProjectFile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,8 +200,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E90298F21E12892200C281AC /* RatingView.swift in Sources */,
+				E90298F91E14C49B00C281AC /* RatingViewDemoViewController.swift in Sources */,
+				E90298F51E14C08000C281AC /* Int+Extension.swift in Sources */,
 				E90298DE1E12759D00C281AC /* ViewController.swift in Sources */,
+				E951D12C1E14E6700059A378 /* BaseViewController.swift in Sources */,
 				E90298DC1E12759D00C281AC /* AppDelegate.swift in Sources */,
+				E951D1301E14E9A50059A378 /* Common.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,6 +367,7 @@
 				E90298EC1E12759D00C281AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

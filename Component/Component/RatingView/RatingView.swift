@@ -1,9 +1,9 @@
 //
 //  RatingView.swift
-//  GreenDoctor
+//  Component
 //
-//  Created by 吴杰健 on 15/12/22.
-//  Copyright © 2015年 kangkanghui. All rights reserved.
+//  Created by 吴杰健 on 16/12/26.
+//  Copyright © 2016年 吴杰健. All rights reserved.
 //
 
 import UIKit
