@@ -27,7 +27,8 @@ class ViewController: UIViewController {
     fileprivate func _initData() {
         tableview.tableFooterView = UIView()
         let dic = [
-            "RatingView": "RatingViewDemoViewController"
+            "RatingView": "RatingViewDemoViewController",
+            "CarouselFigureView": "CarouselFigureViewDemoViewController"
         ]
         for (k, v) in dic {
             demoDatas.append(DemoData(componentName: k, viewControllerName: v))

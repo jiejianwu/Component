@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C7B23154202B1D2615568DF7 /* Pods_Component.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F382A6B4146FD43C01D3C3B5 /* Pods_Component.framework */; };
 		E90298DC1E12759D00C281AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90298DB1E12759D00C281AC /* AppDelegate.swift */; };
 		E90298DE1E12759D00C281AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90298DD1E12759D00C281AC /* ViewController.swift */; };
 		E90298E11E12759D00C281AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E90298DF1E12759D00C281AC /* Main.storyboard */; };
@@ -15,11 +16,18 @@
 		E90298F21E12892200C281AC /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90298F11E12892200C281AC /* RatingView.swift */; };
 		E90298F51E14C08000C281AC /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90298F41E14C08000C281AC /* Int+Extension.swift */; };
 		E90298F91E14C49B00C281AC /* RatingViewDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90298F81E14C49B00C281AC /* RatingViewDemoViewController.swift */; };
+		E918BA7F1E1C00AD00EBE1EE /* CarouselFigureCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E918BA7E1E1C00AD00EBE1EE /* CarouselFigureCollectionViewCell.swift */; };
 		E951D12C1E14E6700059A378 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E951D12B1E14E6700059A378 /* BaseViewController.swift */; };
 		E951D1301E14E9A50059A378 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = E951D12F1E14E9A50059A378 /* Common.swift */; };
+		E9A0961E1E1D3D5000E52C36 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A0961D1E1D3D5000E52C36 /* UIColor+Extension.swift */; };
+		E9EBA9931E1B9A4100DBEFC0 /* CarouselFigureCarouselFigureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EBA9921E1B9A4100DBEFC0 /* CarouselFigureCarouselFigureView.swift */; };
+		E9EBA9951E1BA14500DBEFC0 /* ImageUrlData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EBA9941E1BA14500DBEFC0 /* ImageUrlData.swift */; };
+		E9EBA9971E1BA5B300DBEFC0 /* CarouselFigureViewDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EBA9961E1BA5B300DBEFC0 /* CarouselFigureViewDemoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		35442DCB9DE98D1A7407628F /* Pods-Component.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Component.release.xcconfig"; path = "Pods/Target Support Files/Pods-Component/Pods-Component.release.xcconfig"; sourceTree = "<group>"; };
+		C92ADCA13D3835E309022EE3 /* Pods-Component.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Component.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Component/Pods-Component.debug.xcconfig"; sourceTree = "<group>"; };
 		E90298D81E12759D00C281AC /* Component.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Component.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E90298DB1E12759D00C281AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E90298DD1E12759D00C281AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,8 +38,14 @@
 		E90298F11E12892200C281AC /* RatingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		E90298F41E14C08000C281AC /* Int+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Int+Extension.swift"; path = "Extension/Int+Extension.swift"; sourceTree = "<group>"; };
 		E90298F81E14C49B00C281AC /* RatingViewDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RatingViewDemoViewController.swift; path = DemoViewController/RatingViewDemoViewController.swift; sourceTree = "<group>"; };
+		E918BA7E1E1C00AD00EBE1EE /* CarouselFigureCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselFigureCollectionViewCell.swift; sourceTree = "<group>"; };
 		E951D12B1E14E6700059A378 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = Support/BaseViewController.swift; sourceTree = "<group>"; };
 		E951D12F1E14E9A50059A378 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Common.swift; path = Support/Common.swift; sourceTree = "<group>"; };
+		E9A0961D1E1D3D5000E52C36 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+Extension.swift"; path = "Extension/UIColor+Extension.swift"; sourceTree = "<group>"; };
+		E9EBA9921E1B9A4100DBEFC0 /* CarouselFigureCarouselFigureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselFigureCarouselFigureView.swift; sourceTree = "<group>"; };
+		E9EBA9941E1BA14500DBEFC0 /* ImageUrlData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageUrlData.swift; sourceTree = "<group>"; };
+		E9EBA9961E1BA5B300DBEFC0 /* CarouselFigureViewDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CarouselFigureViewDemoViewController.swift; path = DemoViewController/CarouselFigureViewDemoViewController.swift; sourceTree = "<group>"; };
+		F382A6B4146FD43C01D3C3B5 /* Pods_Component.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Component.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +53,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7B23154202B1D2615568DF7 /* Pods_Component.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		277EFA9774E86EE5B47B46DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F382A6B4146FD43C01D3C3B5 /* Pods_Component.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3A550B7014D00B2AA7CB32C9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C92ADCA13D3835E309022EE3 /* Pods-Component.debug.xcconfig */,
+				35442DCB9DE98D1A7407628F /* Pods-Component.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E90298CF1E12759D00C281AC = {
 			isa = PBXGroup;
 			children = (
 				E90298DA1E12759D00C281AC /* Component */,
 				E90298D91E12759D00C281AC /* Products */,
+				3A550B7014D00B2AA7CB32C9 /* Pods */,
+				277EFA9774E86EE5B47B46DF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,6 +119,7 @@
 		E90298EF1E1276D500C281AC /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				E9EBA9911E1B9A4100DBEFC0 /* CarouselFigureView */,
 				E90298F01E12892200C281AC /* RatingView */,
 			);
 			path = Component;
@@ -102,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				E90298F41E14C08000C281AC /* Int+Extension.swift */,
+				E9A0961D1E1D3D5000E52C36 /* UIColor+Extension.swift */,
 			);
 			name = Extension;
 			sourceTree = "<group>";
@@ -110,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				E90298F81E14C49B00C281AC /* RatingViewDemoViewController.swift */,
+				E9EBA9961E1BA5B300DBEFC0 /* CarouselFigureViewDemoViewController.swift */,
 			);
 			name = DemoViewControllers;
 			sourceTree = "<group>";
@@ -127,6 +164,16 @@
 			name = ProjectFile;
 			sourceTree = "<group>";
 		};
+		E9EBA9911E1B9A4100DBEFC0 /* CarouselFigureView */ = {
+			isa = PBXGroup;
+			children = (
+				E9EBA9921E1B9A4100DBEFC0 /* CarouselFigureCarouselFigureView.swift */,
+				E9EBA9941E1BA14500DBEFC0 /* ImageUrlData.swift */,
+				E918BA7E1E1C00AD00EBE1EE /* CarouselFigureCollectionViewCell.swift */,
+			);
+			path = CarouselFigureView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +181,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E90298EA1E12759D00C281AC /* Build configuration list for PBXNativeTarget "Component" */;
 			buildPhases = (
+				8670CD3069C34ACEC61D0F96 /* [CP] Check Pods Manifest.lock */,
 				E90298D41E12759D00C281AC /* Sources */,
 				E90298D51E12759D00C281AC /* Frameworks */,
 				E90298D61E12759D00C281AC /* Resources */,
+				075F577A779539F5F1C67869 /* [CP] Embed Pods Frameworks */,
+				A2B1BEA3087842434904B871 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -194,17 +244,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		075F577A779539F5F1C67869 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Component/Pods-Component-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8670CD3069C34ACEC61D0F96 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A2B1BEA3087842434904B871 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Component/Pods-Component-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E90298D41E12759D00C281AC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				E90298F21E12892200C281AC /* RatingView.swift in Sources */,
+				E9EBA9951E1BA14500DBEFC0 /* ImageUrlData.swift in Sources */,
 				E90298F91E14C49B00C281AC /* RatingViewDemoViewController.swift in Sources */,
+				E9A0961E1E1D3D5000E52C36 /* UIColor+Extension.swift in Sources */,
 				E90298F51E14C08000C281AC /* Int+Extension.swift in Sources */,
+				E9EBA9971E1BA5B300DBEFC0 /* CarouselFigureViewDemoViewController.swift in Sources */,
 				E90298DE1E12759D00C281AC /* ViewController.swift in Sources */,
+				E9EBA9931E1B9A4100DBEFC0 /* CarouselFigureCarouselFigureView.swift in Sources */,
 				E951D12C1E14E6700059A378 /* BaseViewController.swift in Sources */,
 				E90298DC1E12759D00C281AC /* AppDelegate.swift in Sources */,
+				E918BA7F1E1C00AD00EBE1EE /* CarouselFigureCollectionViewCell.swift in Sources */,
 				E951D1301E14E9A50059A378 /* Common.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,6 +429,7 @@
 		};
 		E90298EB1E12759D00C281AC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C92ADCA13D3835E309022EE3 /* Pods-Component.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Component/Info.plist;
@@ -338,6 +442,7 @@
 		};
 		E90298EC1E12759D00C281AC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35442DCB9DE98D1A7407628F /* Pods-Component.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Component/Info.plist;
