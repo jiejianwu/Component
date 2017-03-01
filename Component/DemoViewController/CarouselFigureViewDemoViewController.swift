@@ -15,7 +15,7 @@ class CarouselFigureViewDemoViewController: BaseViewController {
         _init()
     }
     
-    fileprivate func _init() {
+    private func _init() {
         let v = CarouselFigureView(frame: CGRect(x: 0, y: 80, width: screenWidth, height: 100))
         v.setup(imageUrlDatas: [ImageUrlData(imageUrl: "http://dl.bizhi.sogou.com/images/2012/03/11/290288.jpg", touchEvent: ImageTouchEvent.None), ImageUrlData(imageUrl: "http://dl.bizhi.sogou.com/images/2012/04/10/165812.jpg", touchEvent: ImageTouchEvent.Web(url: "asdasd"))])
         v.delegate = self

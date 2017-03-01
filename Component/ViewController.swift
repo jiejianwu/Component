@@ -28,7 +28,8 @@ class ViewController: UIViewController {
         tableview.tableFooterView = UIView()
         let dic = [
             "RatingView": "RatingViewDemoViewController",
-            "CarouselFigureView": "CarouselFigureViewDemoViewController"
+            "CarouselFigureView": "CarouselFigureViewDemoViewController",
+            "LoadingView": "LoadingViewDemoViewController"
         ]
         for (k, v) in dic {
             demoDatas.append(DemoData(componentName: k, viewControllerName: v))

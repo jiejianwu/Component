@@ -17,6 +17,8 @@
 		E90298F51E14C08000C281AC /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90298F41E14C08000C281AC /* Int+Extension.swift */; };
 		E90298F91E14C49B00C281AC /* RatingViewDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90298F81E14C49B00C281AC /* RatingViewDemoViewController.swift */; };
 		E918BA7F1E1C00AD00EBE1EE /* CarouselFigureCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E918BA7E1E1C00AD00EBE1EE /* CarouselFigureCollectionViewCell.swift */; };
+		E919DA781E6560FA0020D803 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E919DA771E6560FA0020D803 /* LoadingView.swift */; };
+		E919DA7A1E66BED50020D803 /* LoadingViewDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E919DA791E66BED50020D803 /* LoadingViewDemoViewController.swift */; };
 		E951D12C1E14E6700059A378 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E951D12B1E14E6700059A378 /* BaseViewController.swift */; };
 		E951D1301E14E9A50059A378 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = E951D12F1E14E9A50059A378 /* Common.swift */; };
 		E9A0961E1E1D3D5000E52C36 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A0961D1E1D3D5000E52C36 /* UIColor+Extension.swift */; };
@@ -39,6 +41,8 @@
 		E90298F41E14C08000C281AC /* Int+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Int+Extension.swift"; path = "Extension/Int+Extension.swift"; sourceTree = "<group>"; };
 		E90298F81E14C49B00C281AC /* RatingViewDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RatingViewDemoViewController.swift; path = DemoViewController/RatingViewDemoViewController.swift; sourceTree = "<group>"; };
 		E918BA7E1E1C00AD00EBE1EE /* CarouselFigureCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselFigureCollectionViewCell.swift; sourceTree = "<group>"; };
+		E919DA771E6560FA0020D803 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoadingView.swift; path = LoadingView/LoadingView.swift; sourceTree = "<group>"; };
+		E919DA791E66BED50020D803 /* LoadingViewDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoadingViewDemoViewController.swift; path = DemoViewController/LoadingViewDemoViewController.swift; sourceTree = "<group>"; };
 		E951D12B1E14E6700059A378 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = Support/BaseViewController.swift; sourceTree = "<group>"; };
 		E951D12F1E14E9A50059A378 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Common.swift; path = Support/Common.swift; sourceTree = "<group>"; };
 		E9A0961D1E1D3D5000E52C36 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+Extension.swift"; path = "Extension/UIColor+Extension.swift"; sourceTree = "<group>"; };
@@ -119,6 +123,7 @@
 		E90298EF1E1276D500C281AC /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				E919DA761E6560CA0020D803 /* LoadingView */,
 				E9EBA9911E1B9A4100DBEFC0 /* CarouselFigureView */,
 				E90298F01E12892200C281AC /* RatingView */,
 			);
@@ -147,8 +152,17 @@
 			children = (
 				E90298F81E14C49B00C281AC /* RatingViewDemoViewController.swift */,
 				E9EBA9961E1BA5B300DBEFC0 /* CarouselFigureViewDemoViewController.swift */,
+				E919DA791E66BED50020D803 /* LoadingViewDemoViewController.swift */,
 			);
 			name = DemoViewControllers;
+			sourceTree = "<group>";
+		};
+		E919DA761E6560CA0020D803 /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				E919DA771E6560FA0020D803 /* LoadingView.swift */,
+			);
+			name = LoadingView;
 			sourceTree = "<group>";
 		};
 		E951D12E1E14E7290059A378 /* ProjectFile */ = {
@@ -209,6 +223,7 @@
 				TargetAttributes = {
 					E90298D71E12759D00C281AC = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = YT4B64ELT8;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -308,7 +323,9 @@
 				E951D12C1E14E6700059A378 /* BaseViewController.swift in Sources */,
 				E90298DC1E12759D00C281AC /* AppDelegate.swift in Sources */,
 				E918BA7F1E1C00AD00EBE1EE /* CarouselFigureCollectionViewCell.swift in Sources */,
+				E919DA781E6560FA0020D803 /* LoadingView.swift in Sources */,
 				E951D1301E14E9A50059A378 /* Common.swift in Sources */,
+				E919DA7A1E66BED50020D803 /* LoadingViewDemoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +449,7 @@
 			baseConfigurationReference = C92ADCA13D3835E309022EE3 /* Pods-Component.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = YT4B64ELT8;
 				INFOPLIST_FILE = Component/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wjj.Component;
@@ -445,6 +463,7 @@
 			baseConfigurationReference = 35442DCB9DE98D1A7407628F /* Pods-Component.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = YT4B64ELT8;
 				INFOPLIST_FILE = Component/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wjj.Component;
