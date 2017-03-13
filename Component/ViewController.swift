@@ -29,7 +29,8 @@ class ViewController: UIViewController {
         let dic = [
             "RatingView": "RatingViewDemoViewController",
             "CarouselFigureView": "CarouselFigureViewDemoViewController",
-            "LoadingView": "LoadingViewDemoViewController"
+            "LoadingView": "LoadingViewDemoViewController",
+            "QRScan": "QRScanViewController"
         ]
         for (k, v) in dic {
             demoDatas.append(DemoData(componentName: k, viewControllerName: v))

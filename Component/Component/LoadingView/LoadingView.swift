@@ -46,6 +46,10 @@ class LoadingView: UIView {
         return lay
     }()
     
+    
+    
+    
+    
     var selfWidth: CGFloat {
         return self.bounds.width
     }
@@ -165,6 +169,10 @@ class LoadingView: UIView {
         circleLayer.strokeEnd = 1.0 / 4
         circleLayer.add(bAnimation, forKey: "rotation animation")
 
+    }
+    
+    override func draw(_ rect: CGRect) {
+        super.draw(rect)
     }
     
 }
