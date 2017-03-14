@@ -29,7 +29,7 @@ class QRScanViewController: BaseViewController {
     
     private func _init() {
         do {
-            device = AVCaptureDevice.defaultDevice(withDeviceType: .builtInWideAngleCamera, mediaType: AVMediaTypeVideo, position: .back)
+            device = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo)
             input = try AVCaptureDeviceInput(device: device)
             output = AVCaptureMetadataOutput()
             output?.setMetadataObjectsDelegate(self, queue: DispatchQueue.main)
@@ -50,29 +50,7 @@ class QRScanViewController: BaseViewController {
             previewLayer?.videoGravity = AVLayerVideoGravityResizeAspectFill
             view.layer.addSublayer(previewLayer!)
             
-            let bPath = UIBezierPath()
-            bPath.lineCapStyle = .square
-            bPath.lineJoinStyle = .miter
-
-            let topWidth = scanRect.origin.y * screenHeight
-            let buttomWidth = (1 - scanRect.origin.y - scanRect.height) * screenHeight
-            let leftWidth = scanRect.origin.x * screenWidth
-            let rightWidth = (1 - scanRect.origin.x - scanRect.width) * screenWidth
-            let width = max(topWidth, buttomWidth, leftWidth, rightWidth)
-            print(topWidth, buttomWidth, leftWidth, rightWidth, width)
-            bPath.move(to: CGPoint(x: leftWidth - width / 2, y: topWidth - width / 2))
-            bPath.addLine(to: CGPoint(x: screenWidth - rightWidth + width / 2, y: topWidth - width / 2))
-            bPath.addLine(to: CGPoint(x: screenWidth - rightWidth + width / 2, y: screenHeight - buttomWidth + width / 2))
-            bPath.addLine(to: CGPoint(x: leftWidth - width / 2, y: screenHeight - buttomWidth + width / 2))
-            bPath.close()
-            
-            shadowLayer = CAShapeLayer()
-            shadowLayer?.frame = view.bounds
-            shadowLayer?.path = bPath.cgPath
-            shadowLayer?.lineWidth = width
-            shadowLayer?.strokeColor = UIColor(white: 0.5, alpha: 0.3).cgColor
-            shadowLayer?.fillColor = UIColor.clear.cgColor
-            view.layer.addSublayer(shadowLayer!)
+            _initMask()
             
             session?.startRunning()
         } catch {
@@ -81,6 +59,31 @@ class QRScanViewController: BaseViewController {
 
     }
     
+    private func _initMask() {
+        let bPath = UIBezierPath()
+        bPath.lineCapStyle = .square
+        bPath.lineJoinStyle = .miter
+        
+        let topWidth = scanRect.origin.y * screenHeight
+        let buttomWidth = (1 - scanRect.origin.y - scanRect.height) * screenHeight
+        let leftWidth = scanRect.origin.x * screenWidth
+        let rightWidth = (1 - scanRect.origin.x - scanRect.width) * screenWidth
+        let width = max(topWidth, buttomWidth, leftWidth, rightWidth)
+        print(topWidth, buttomWidth, leftWidth, rightWidth, width)
+        bPath.move(to: CGPoint(x: leftWidth - width / 2, y: topWidth - width / 2))
+        bPath.addLine(to: CGPoint(x: screenWidth - rightWidth + width / 2, y: topWidth - width / 2))
+        bPath.addLine(to: CGPoint(x: screenWidth - rightWidth + width / 2, y: screenHeight - buttomWidth + width / 2))
+        bPath.addLine(to: CGPoint(x: leftWidth - width / 2, y: screenHeight - buttomWidth + width / 2))
+        bPath.close()
+        
+        shadowLayer = CAShapeLayer()
+        shadowLayer?.frame = view.bounds
+        shadowLayer?.path = bPath.cgPath
+        shadowLayer?.lineWidth = width
+        shadowLayer?.strokeColor = UIColor(white: 0.5, alpha: 0.3).cgColor
+        shadowLayer?.fillColor = UIColor.clear.cgColor
+        view.layer.addSublayer(shadowLayer!)
+    }
     
 }
 

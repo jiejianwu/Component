@@ -30,7 +30,8 @@ class ViewController: UIViewController {
             "RatingView": "RatingViewDemoViewController",
             "CarouselFigureView": "CarouselFigureViewDemoViewController",
             "LoadingView": "LoadingViewDemoViewController",
-            "QRScan": "QRScanViewController"
+            "QRScan": "QRScanViewController",
+            "QRImageGenerator": "QRImageGeneratorViewController"
         ]
         for (k, v) in dic {
             demoDatas.append(DemoData(componentName: k, viewControllerName: v))

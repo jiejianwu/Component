@@ -79,6 +79,7 @@ class LoadingView: UIView {
     }
     
     func setup() {
+        self.backgroundColor = UIColor.white
         layoutSubLayer()
         drawBgLayer()
         drawCircleLayer()
@@ -154,7 +155,7 @@ class LoadingView: UIView {
     func addAnimationToCheckLayer() {
         
         let bAnimation = CABasicAnimation(keyPath: "strokeEnd")
-        bAnimation.duration = 5
+        bAnimation.duration = 0.2
         bAnimation.fromValue = 0
         bAnimation.toValue = 1
         checkLayer.add(bAnimation, forKey: "check Animation")

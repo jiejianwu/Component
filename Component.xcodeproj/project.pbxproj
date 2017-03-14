@@ -22,6 +22,8 @@
 		E919DA7C1E6858430020D803 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E919DA7B1E6858430020D803 /* UIImageView+Extension.swift */; };
 		E936069D1E72ADC600DA4400 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E936069C1E72ADC600DA4400 /* UIImage+Extension.swift */; };
 		E93606C01E764D5A00DA4400 /* QRScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93606BF1E764D5A00DA4400 /* QRScanViewController.swift */; };
+		E93606C21E77D95700DA4400 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93606C11E77D95700DA4400 /* String+Extension.swift */; };
+		E93606C81E78001300DA4400 /* QRImageGeneratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93606C71E78001300DA4400 /* QRImageGeneratorViewController.swift */; };
 		E951D12C1E14E6700059A378 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E951D12B1E14E6700059A378 /* BaseViewController.swift */; };
 		E951D1301E14E9A50059A378 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = E951D12F1E14E9A50059A378 /* Common.swift */; };
 		E9A0961E1E1D3D5000E52C36 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A0961D1E1D3D5000E52C36 /* UIColor+Extension.swift */; };
@@ -49,6 +51,8 @@
 		E919DA7B1E6858430020D803 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImageView+Extension.swift"; path = "Extension/UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		E936069C1E72ADC600DA4400 /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImage+Extension.swift"; path = "Extension/UIImage+Extension.swift"; sourceTree = "<group>"; };
 		E93606BF1E764D5A00DA4400 /* QRScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QRScanViewController.swift; path = QRScanViewController/QRScanViewController.swift; sourceTree = "<group>"; };
+		E93606C11E77D95700DA4400 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Extension.swift"; path = "Extension/String+Extension.swift"; sourceTree = "<group>"; };
+		E93606C71E78001300DA4400 /* QRImageGeneratorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QRImageGeneratorViewController.swift; path = DemoViewController/QRImageGeneratorViewController.swift; sourceTree = "<group>"; };
 		E951D12B1E14E6700059A378 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = Support/BaseViewController.swift; sourceTree = "<group>"; };
 		E951D12F1E14E9A50059A378 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Common.swift; path = Support/Common.swift; sourceTree = "<group>"; };
 		E9A0961D1E1D3D5000E52C36 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+Extension.swift"; path = "Extension/UIColor+Extension.swift"; sourceTree = "<group>"; };
@@ -152,6 +156,7 @@
 				E9A0961D1E1D3D5000E52C36 /* UIColor+Extension.swift */,
 				E919DA7B1E6858430020D803 /* UIImageView+Extension.swift */,
 				E936069C1E72ADC600DA4400 /* UIImage+Extension.swift */,
+				E93606C11E77D95700DA4400 /* String+Extension.swift */,
 			);
 			name = Extension;
 			sourceTree = "<group>";
@@ -162,6 +167,7 @@
 				E90298F81E14C49B00C281AC /* RatingViewDemoViewController.swift */,
 				E9EBA9961E1BA5B300DBEFC0 /* CarouselFigureViewDemoViewController.swift */,
 				E919DA791E66BED50020D803 /* LoadingViewDemoViewController.swift */,
+				E93606C71E78001300DA4400 /* QRImageGeneratorViewController.swift */,
 			);
 			name = DemoViewControllers;
 			sourceTree = "<group>";
@@ -339,6 +345,8 @@
 				E9EBA9971E1BA5B300DBEFC0 /* CarouselFigureViewDemoViewController.swift in Sources */,
 				E90298DE1E12759D00C281AC /* ViewController.swift in Sources */,
 				E9EBA9931E1B9A4100DBEFC0 /* CarouselFigureCarouselFigureView.swift in Sources */,
+				E93606C21E77D95700DA4400 /* String+Extension.swift in Sources */,
+				E93606C81E78001300DA4400 /* QRImageGeneratorViewController.swift in Sources */,
 				E951D12C1E14E6700059A378 /* BaseViewController.swift in Sources */,
 				E90298DC1E12759D00C281AC /* AppDelegate.swift in Sources */,
 				E93606C01E764D5A00DA4400 /* QRScanViewController.swift in Sources */,
